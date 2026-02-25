@@ -1,18 +1,41 @@
-# React + Vite
+🧠 React Quiz Application
+A fully functional quiz management application built with React that supports:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✅ Multiple Choice Questions (Single Correct)
+✅ Multiple Choice Questions (Multiple Correct)
+✅ Short Answer Questions (One or Two Words)
+✅ Quiz Creation, Playing, Editing, and Deleting
+✅ LocalStorage for quiz persistence
+📂 Project Structure
+├── components/ │ ├── Navbar.jsx │ ├── MyQuizes.jsx │ ├── PlayQuiz.jsx │ ├── QuizGame.jsx │ ├── EditQuiz.jsx │ ├── quizTypes/ │ ├── Mcq_single.jsx │ ├── Mcq_multiple.jsx │ └── Short_answer.jsx │ ├── App.jsx └── index.js
 
-Currently, two official plugins are available:
+🚀 Features
+✍️ Create Quizzes
+MCQ (Single Correct): Choose only one correct answer
+MCQ (Multiple Correct): Select multiple correct answers using checkboxes
+Short Answer: Users must type a one or two-word answer
+Each quiz includes:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
-
-Note: This will impact Vite dev & build performances.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Title
+Description
+Dynamically added questions
+Local validation before saving
+🧾 My Quizzes
+View saved quizzes
+Toggle quiz status (Active/Inactive)
+Edit or delete existing quizzes
+🎮 Play Quiz
+List of active quizzes available to play
+Route-based quiz rendering using React Router
+Auto-hides inactive quizzes from the play screen
+🛠 Edit Quiz
+Preloads data using localStorage
+Allows editing of:
+Quiz title and description
+All questions and answers/options
+Supports all quiz types
+🧱 Built With
+React.js – Functional components and Hooks
+React Router DOM – For routing between views
+TailwindCSS – For styling and responsiveness
+LocalStorage – For storing quiz data locally
